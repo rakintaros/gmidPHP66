@@ -16,21 +16,21 @@
 
 <body>
     <div class="container">
-        <form action="/action_page.php">
+        <h3>Page 1. +</h3>
+        <form action="result.php" method="get">
             <div class="mb-3 mt-3">
                 <label class="form-label">Number 1:</label>
                 <input type="number" class="form-control" id="num1" placeholder="Enter Number1" name="num1">
             </div>
+            <div>
+                +
+            </div>
+            <input type="hidden" name="op" value="+">
             <div class="mb-3">
                 <label class="form-label">Number 2:</label>
                 <input type="number" class="form-control" id="num2" placeholder="Enter Number2" name="num2">
             </div>
-            <div class="form-check mb-3">
-                <label class="form-check-label">
-                    <input class="form-check-input" type="checkbox" name="remember"> Remember me
-                </label>
-            </div>
-            <button type="submit" class="btn btn-primary">Submit</button>
+            <button type="submit" class="btn btn-primary">คำนวณ</button>
         </form>
     </div>
 </body>
